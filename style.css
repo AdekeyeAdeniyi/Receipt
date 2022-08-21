@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color : #f0f0f0;
+    --dark: #000;
+    --completed: #48bf45;
+    --blue: #0052b4;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+}
+
+.receipt {
+    position: relative;
+    width: 892px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 50px 60px;
+}
+
+.reciept__title,
+.receipt__subtitle,
+.receipt__image {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reciept__title {
+    font-size: 5.4rem;
+    font-weight: 400;
+}
+
+.receipt__subtitle {
+    font-size: 2.5rem;
+}
+.receipt__image {
+    margin: 20px 0;
+}
+.receipt__image img {
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.receipt__details {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.receipt__details .name,
+.receipt__details .address,
+.receipt__details .dateAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.receipt__transactions {
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+}
+
+.receipt__transactions .status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.receipt__transactions .status .completed{
+    color: var(--completed);
+}
+
+.receipt__transactions .type {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.receipt__transactions .type .card {
+    list-style: none;
+    text-align: end;
+}
+
+.receipt__transactions .type .card li:nth-child(1){
+    color: var(--blue);
+}
+
+.receipt__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.receipt__information img{
+    width: 60%;
+}
+
+.receipt__information .address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.receipt__information .link a:link{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 30%
+    }
+
+    .receipt{
+        width: 100%;
+        padding: 30px;
+    }
+}

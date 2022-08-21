@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stack Bucks Receipt</title>
+</head>
+<body>
+    <div class="receipt">
+        <h1 class="reciept__title">
+            <span> Receipt </span>
+            <span> Customer </span>
+        </h1>
+        <div class="receipt__subtitle">
+            <span> from </span>
+            <span> to </span>
+        </div>
+        <div class="receipt__image">
+            <img src="./logos.png" alt="Logo">
+            <img src="./qr-code.png" alt="Logo">
+        </div>
+        <div class="receipt__details">
+            <div class="name">
+                <span> Starbucks </span>
+                <span> Micheal Stan </span>
+            </div>
+            <div class="address">
+                <span> 31 street, London, England, Uk </span>
+            </div>
+            <div class="dateAmount">
+                <span> 20.06.2022 </span>
+                <p> Total amount: <span> $9.99 </span> </p>
+            </div>
+        </div>
+        <div class="receipt__transactions">
+            <div class="status">
+                <span> Transaction status </span>
+                <span data-status="completed" class="completed"> Completed </span>
+            </div>
+            <div class="type">
+                <span> Payment type </span>
+                <ul class="card"> 
+                    <li> Card payment </li>
+                    <li> **** **** **** 3434 </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="receipt__information">
+            <img src="./uniflow.png" alt="Company Logo">
+            <p class="address"> 
+                <span> Bettert Than That Ltd, trading as Uniflow </span>
+                <span> Southampton, England, Uk </span>
+                <span> SO15 2EP </span>
+            </p>
+            <p class="link">
+                <a href="www.universalflow.io" target="__bank"> www.universalflow.io </a> | 
+                <a href="mailto:contact@universalflow.io"> contact@universalflow.io </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
