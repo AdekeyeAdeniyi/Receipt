@@ -9,6 +9,7 @@
 :root {
     --background-color : #f0f0f0;
     --dark: #000;
+    --text-color: #4d494d;
     --completed: #48bf45;
     --blue: #0052b4;
 }
@@ -20,7 +21,7 @@ html {
 body {
     text-rendering: optimizeLegibility;
     font-family: 'Work Sans', sans-serif;
-    color: var(--dark);
+    color: var(--text-color);
     line-height: 1.5;
 }
 
@@ -30,6 +31,7 @@ body {
     margin: 0 auto;
     background-color: var(--background-color);
     padding: 50px 60px;
+    min-height: 100vh;
 }
 
 .reciept__title,
@@ -44,19 +46,24 @@ body {
 .reciept__title {
     font-size: 5.4rem;
     font-weight: 400;
+    color: var(--dark);
 }
 
 .receipt__subtitle {
     font-size: 2.5rem;
+    color: var(--dark);
 }
+
 .receipt__image {
-    margin: 20px 0;
+    margin: 30px 0;
 }
+
 .receipt__image img {
     width: 15%;
     height: 100%;
     object-fit: cover;
 }
+
 
 .receipt__details {
     width: 100%;
@@ -73,6 +80,16 @@ body {
     align-items: center;
 }
 
+.receipt__details .address{ 
+    margin: 15px 0;
+}
+
+.receipt__details .dateAmount p span {
+    font-weight: 500;
+    color: var(--dark);
+}
+
+
 .receipt__transactions {
     width: 100%;
     position: relative;
@@ -84,6 +101,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .receipt__transactions .status .completed{
@@ -127,18 +145,18 @@ body {
 }
 
 .receipt__information .link a:link{
-    color: var(--dark);
+    color: var(--text-color);
     text-decoration: none;
 }
 
 
 @media only screen and (max-width: 400px) {
     html {
-        font-size: 30%
+        font-size: 35%
     }
 
     .receipt{
         width: 100%;
-        padding: 30px;
+        padding: 20px;
     }
 }
