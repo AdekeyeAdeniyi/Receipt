@@ -144,6 +144,10 @@ body {
     padding: 20px 0;
 }
 
+.receipt__information .link {
+    text-align: center;
+}
+
 .receipt__information .link a:link{
     color: var(--text-color);
     text-decoration: none;
