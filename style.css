@@ -28,10 +28,11 @@ body {
 .receipt {
     position: relative;
     width: 892px;
-    margin: 0 auto;
+    margin: 30px  auto;
     background-color: var(--background-color);
     padding: 50px 60px;
     min-height: 100vh;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 }
 
 .reciept__title,
