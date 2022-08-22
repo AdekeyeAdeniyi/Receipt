@@ -148,7 +148,9 @@ body {
     text-align: center;
 }
 
-.receipt__information .link a:link{
+.receipt__information .link a:link,
+.receipt__information .link a:visited,
+.receipt__information .link a:hover{
     color: var(--text-color);
     text-decoration: none;
 }
